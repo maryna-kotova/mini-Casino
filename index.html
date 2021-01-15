@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalwindow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;900&display=swap" rel="stylesheet">
+</head>
+<body>       
+    <div id="airPlane"></div>
+    <form name="welcome" id="welcome">
+        <h2>Добро пожаловать!</h2>
+        <input type="text" name="enterNameUser" value="Введите Ваше имя">       
+    </form>
+    <section id="all">
+    <table>
+        <tr>
+            <td id="combinations">
+                <table>
+                    <tr>
+                        <th>Комбинация</th>
+                        <th>Описание</th>
+                        <th>Выигрыш</th>                
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/strawberry.png">
+                            <img src="images/strawberry.png">
+                            <img src="images/strawberry.png">
+                        </td>
+                        <td>Три клубнички</td>
+                        <td>800 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/cherry.png">
+                            <img src="images/cherry.png">
+                            <img src="images/cherry.png">
+                        </td>
+                        <td>Три вишенки</td>
+                        <td>200 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/grape.png">
+                            <img src="images/grape.png">
+                            <img src="images/grape.png">
+                        </td>
+                        <td>Три винограда</td>
+                        <td>80 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/watermelon.png">
+                            <img src="images/watermelon.png">
+                            <img src="images/watermelon.png">
+                        </td>
+                        <td>Три арбуза</td>
+                        <td>40 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/pumpkin.png">
+                            <img src="images/pumpkin.png">
+                            <img src="images/pumpkin.png">
+                        </td>
+                        <td>Три тыквы</td>
+                        <td>20 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any3x.gif">
+                            <img src="images/apple_green.png">
+                            <img src="images/apple_red.png">
+                        </td>
+                        <td>Три яблока любого цвета</td>
+                        <td>10 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any2x.gif">
+                            <img src="images/apple_green.png">
+                            <img src="images/apple_red.png">
+                        </td>
+                        <td>Два яблока любого цвета</td>
+                        <td>5 : 1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/any1x.gif">
+                            <img src="images/apple_green.png">
+                            <img src="images/apple_red.png">
+                        </td>
+                        <td>Одно яблоко любого цвета</td>
+                        <td>2 : 1</td>
+                    </tr>
+                </table>
+            </td>
+            <td id="drum">
+                <figure>
+                    <div><img id="img1" src="images/strawberry.png"></div>
+                    <div><img id="img2" src="images/strawberry.png"></div>
+                    <div><img id="img3" src="images/strawberry.png"></div>                    
+                </figure>
+                <button id="luck">Попытать удачу</button>
+            </td>
+            <td id="moneyBoard">
+                <div id="lastVisit">
+                    Дата последнего посещения: <em></em>
+                </div>                
+                <h2 id="hello">Привет, <span></span>! </h2> 
+                <section>
+                    <div>
+                        <p id="money">
+                            На Вашем счету: <strong>1000</strong> 
+                            <img src="images/coin3.png">
+                        </p> 
+                        <div id="newMoney">
+                            <label >Внести сумму: <input type="text" name="newMoneyInput" id="newMoneyInput" value="1000"></label> 
+                            <input type="submit" value="OK">
+                        </div>                                             
+                        <button id="getMoney">Пополнить счет <img src="images/money.png"></button>
+                    </div>
+                    <div>
+                        <p id="rate">
+                            На кону: <strong>0</strong>           
+                            <img src="images/coin3.png">
+                        </p>  
+                        <div id="newRate">
+                            <label>Ваша ставка: <input type="text" name="newRateInput" id="newRateInput" value="100"></label> 
+                            <input type="submit" value="OK">
+                        </div>                                                   
+                        <button id="replenish">Сделать ставку <img src="images/money.png"></button>
+                    </div>
+                    
+                    <p id="getWin">
+                        Общий выигрыш: <strong>0</strong>   
+                        <img src="images/coin3.png">
+                    </p>
+                </section>      
+                
+            </td>
+        </tr>        
+    </table>     
+    </section>
+     <script src="js/script.js"></script>
+</body>
+</html>

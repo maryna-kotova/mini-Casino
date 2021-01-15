@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    min-width: 840px;
+    height: 100vh;
+    background-image: url(../images/grass.png), url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+#airPlane{
+    width: 400px;
+    height: 110px;
+    padding-left: 5px;   
+    position: absolute;   
+    left: -400px;   
+    line-height: 80px;
+    cursor: pointer;
+    transition: left 10s cubic-bezier(0, 0, 1, 1);
+    background-image: url(../images/airplane.png);
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    background-position: 0% 100%;
+    color: white; 
+}
+#welcome{
+    width: 30vw;
+    min-width: 300px;
+    height: 30vh;
+    min-height: 100px;
+    margin: 15vw 35vw ;
+    padding-top: 2vw;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 30px 30px rgba(255, 255, 255, 0.7);    
+}
+#welcome input{    
+    width: 250px;
+    height: 30px;   
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    background-color: transparent;
+}
+body>section{
+    width: 100%;
+    height: 100%;
+}
+body>section>table{
+    height: 100%;    
+    margin: 0 auto;    
+}
+button{
+    outline: none;
+}
+#combinations{
+    width: 40%;    
+}
+table table{      
+    margin-left: 40px;
+    background-color: rgba(248, 247, 247, 0.6);
+    border-radius: 10%;
+}
+table table th{
+    height: 30px;
+    font-weight: 900;
+}
+table table tr:hover{
+    background-color: wheat !important;
+}
+table table tr:nth-child(2n){
+    background-color: rgba(243, 206, 161, 0.5);
+}
+table table td{
+    width: 140px;   
+    text-align: center;
+    font-weight: 500;    
+}
+table table td:nth-child(2){
+    width: 240px;       
+}
+table table td:last-child{
+    width: 100px;       
+}
+table table img{
+    width: 22%;
+}
+#drum{    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;  
+    -moz-transform: translateY(20vh);
+}
+#drum figure{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%; 
+    height: 20%;     
+    margin-bottom: 5vw;                
+    box-shadow: 1px 1px 25px 10px rgba(255, 248, 220, 0.8);
+    background-color: rgba(255, 248, 220, 0.7);
+}
+@media screen and (max-width: 992px){
+    #drum figure{
+        height: 4rem; 
+    }
+}
+#drum>figure div{    
+    align-self: center;
+}
+#drum img{
+    width: 100%;
+}
+#luck{
+    width: 150px;
+    height: 40px;  
+    margin-bottom: 5vw;    
+    background-color: #1a4463;
+    -webkit-border-radius: 7px;
+    border-radius: 43px;
+    border: none;
+    color: #e4e2e2;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 4px 9px;
+    text-align: center;
+    text-decoration: none;
+}      
+@keyframes glowing {
+  0% { background-color: #054775; box-shadow: 0 0 2px #074673; }
+  50% { background-color: #1082d4; box-shadow: 0 0 9px #0e87de; }
+  100% { background-color: #074b7b; box-shadow: 0 0 2px #094d7d; }
+}
+#luck {
+  animation: glowing 1500ms infinite;
+}
+#moneyBoard{
+    width: 35%; 
+    padding-top: 50px;   
+    background-image: url(../images/pngflow.com.png);
+    background-repeat: no-repeat;    
+    background-size: 500px;
+    background-position: bottom center;
+    position: relative;   
+}
+#lastVisit{
+    margin-right: 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h2{    
+    margin-bottom: 3vw;
+    text-align: center;
+}
+#moneyBoard section{
+    margin-left: 5VW;
+    margin-bottom: 1VW;
+    position: relative;   
+}
+#moneyBoard section>div{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;   
+}
+#newMoney, #newRate{
+    width: 300px;
+    height: 100px;
+    display: none;    
+    position: absolute;
+    line-height: 70px;
+    text-align: center;
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px 1px gray;
+    background-color: rgba(253, 229, 185, 0.8);  
+}
+#moneyBoard input[type="text"]{
+    width: 50%;
+}
+#moneyBoard input[type="submit"]{
+    width: 35%;  
+    padding: 2px;     
+    border: none;
+    border-radius: 40%;
+    box-shadow: 1px 1px gray;
+    position: absolute;
+    bottom: 5px;
+    left: 100px; 
+    outline: none;    
+}
+#moneyBoard p img{
+    width:18px;
+}
+#moneyBoard button{    
+    align-self: flex-end;
+    width: 160px;
+    height: 40px;
+    margin-right: 1px;    
+    line-height: 40px;  
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px gray;
+    background-color: rgba(253, 210, 185, 0.5);
+}
+#moneyBoard button img{
+    width: 20%;
+}
+
+
+
+
